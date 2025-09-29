@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_sales
+    description: "Staging model for sales data. Cleans and transforms raw sales."
+    columns:
+      - name: order_id
+        description: "The unique identifier for an order."
+        tests:
+          - unique
+          - not_null
+      
+      - name: order_date
+        description: "The date of the order."
+        tests:
+          - not_null

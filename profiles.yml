@@ -1,0 +1,6 @@
+interview_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'dbt_database.duckdb'
